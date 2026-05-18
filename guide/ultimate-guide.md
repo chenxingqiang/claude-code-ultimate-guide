@@ -2190,7 +2190,7 @@ The default model depends on your subscription: **Max/Team Premium** subscribers
 
 **Reality check**: A typical 1-hour session costs **$0.10 - $0.50** depending on usage patterns.
 
-> **Model retirement (April 2026)**: `claude-3-haiku-20240307` (Claude 3 Haiku) was retired on **April 20, 2026**. If your CLAUDE.md, agent definitions, or scripts still hardcode this model ID, migrate to `claude-haiku-4-5-20251001` (Haiku 4.5) immediately. Source: [platform.claude.com/docs/model-deprecations](https://platform.claude.com/docs/model-deprecations)
+> **Model retirement (April 2026)**: `claude-3-haiku-20240307` (Claude 3 Haiku) was retired on **April 20, 2026**. If your CLAUDE.md, agent definitions, or scripts still hardcode this model ID, migrate to `claude-haiku-4-5-20251001` (Haiku 4.5) immediately. Source: [platform.claude.com/docs/en/release-notes/model-deprecations](https://platform.claude.com/docs/en/release-notes/model-deprecations)
 
 #### 200K vs 1M Context: Performance, Cost & Use Cases
 
@@ -18118,7 +18118,7 @@ neonctl branches delete feature-payments
 
 **See also:**
 - [Database Branch Setup Guide](../examples/workflows/database-branch-setup.md) - Complete provider-specific workflows
-- [Neon Branching](https://neon.tech/docs/guides/branching) - Official Neon documentation
+- [Neon Branching](https://neon.com/docs/guides/branching) - Official Neon documentation
 - [PlanetScale Branching](https://planetscale.com/docs/concepts/branching) - Official PlanetScale guide
 
 ### Coordinating Parallel Worktrees: Task Dependencies
@@ -25548,7 +25548,7 @@ A series of 9 focused whitepapers covering Claude Code topics in depth, availabl
 | 07 | Reference Guide | Complete synthesis + workflows |
 | 08 | Agent Teams | Multi-agent orchestration |
 
-→ **[Download all whitepapers (FR + EN)](https://www.florian.bruniaux.com/guides)**
+→ **[Download all whitepapers (FR + EN)](https://cc.bruniaux.com/whitepapers/)**
 
 ---
 

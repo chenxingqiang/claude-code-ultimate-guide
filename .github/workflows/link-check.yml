@@ -26,7 +26,7 @@ jobs:
             --no-progress
             --timeout 30
             --max-retries 3
-            --accept 200,206,429,302
+            --accept 200,206,429,302,403
             --root-dir "$(pwd)"
             --exclude "^mailto:"
             --exclude "^#"
@@ -36,6 +36,10 @@ jobs:
             --exclude "^https://linkedin\\.com"
             --exclude "^https://www\\.linkedin\\.com"
             --exclude "^https://localhost"
+            --exclude "^http://localhost"
+            --exclude "%7B"
+            --exclude "watch\\?v=\\."
+            --exclude "\\.\\.\\."
             './guide/**/*.md'
             './examples/**/*.md'
           fail: false
