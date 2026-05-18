@@ -60,6 +60,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **mcp2cli referenced in machine-readable index** (`machine-readable/reference.yaml`): Added 5-key entry for mcp2cli (knowsuchagency/mcp2cli, ~1 900 stars, Show HN Best March 2026) — CLI bridge that lazy-loads MCP/OpenAPI/GraphQL tool schemas so LLM context only receives tool list and on-demand help strings instead of full schema injection each turn. 96-99% schema-token reduction benchmarked independently by Firecrawl, Scalekit, and CircleCI. Key nuance: 4+ unrelated forks share the same name; knowsuchagency is the reference implementation. Scoped to dev/single-tenant; not a replacement for enterprise MCP gateways with per-user OAuth and audit logs.
 - **Context Compression section added to Third-Party Tools** (`guide/ecosystem/third-party-tools.md`): New section between Token & Cost Tracking and Session Management, documenting lean-ctx (4-dimension Rust compression CLI: file read modes, shell modules, CCP session cache, SQLite property graph; watch-list status with caveats) and mcp2cli (Python CLI bridge solving MCP schema injection via lazy loading; independently benchmarked 32× token reduction on GitHub MCP server; naming collision warning for the 4+ unrelated forks). Table of Contents and frontmatter description updated.
 
+### Changed
+
+- **Skills–Commands unification (CC 2.1.3)**: All educational content updated to reflect that `.claude/commands/` is merged into `.claude/skills/`. The 3-way Agent/Skill/Command model is now a 2-way Agent/Skill model with invocation modes (`disable-model-invocation: true` for user-only, default for model-invocable). Affected: `guide/cheatsheet.md`, `guide/ultimate-guide.md` §5/§6, `whitepapers/fr+en` WP02/04/07, recap cards c04/m09/m10/01-commandes (FR+EN), landing docs mirrors, landing Q&A, machine-readable index. New editorial reference: `claudedocs/pedagogy-skills-merger.md`.
+
 ### Security
 
 - **Threat database updated to v2.18.0** (`examples/commands/resources/threat-db.yaml`, `guide/security/security-hardening.md`): 7 new entries covering threats discovered after 2026-05-11:
